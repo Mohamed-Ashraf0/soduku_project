@@ -23,5 +23,18 @@ A modular C++ implementation of the classic **Sudoku** puzzle game. This project
   - `SudokuGenerator` – Generates puzzles with varying levels of difficulty.
   - `SudokuGame` – Manages overall game logic.
 ## 🗂️ Project Structure
+soduku_project/
+├── data/                  # Sample input/output puzzles and test data
+├── include/
+│   ├── SudokuBoard.hpp        # Board representation and utilities
+│   ├── SudokuGame.hpp         # Game manager class
+│   ├── SudokuGenerator.hpp    # Puzzle generation logic
+│   └── SudokuSolver.hpp       # Solver logic (backtracking algorithm)
+├── src/
+│   ├── SudokuBoard.cpp
+│   ├── SudokuGame.cpp
+│   ├── SudokuGenerator.cpp
+│   └── SudokuSolver.cpp
+├── CMakeLists.txt         # CMake build configuration
+└── .gitignore             # Git ignore rules
 
-soduku_project/ ├── data/ # Sample input/output puzzles and test data ├── include/ │ ├── SudokuBoard.hpp # Board representation and utilities │ ├── SudokuGame.hpp # Game manager class │ ├── SudokuGenerator.hpp # Puzzle generation logic │ └── SudokuSolver.hpp # Solver logic (backtracking algorithm) ├── src/ │ ├── SudokuBoard.cpp │ ├── SudokuGame.cpp │ ├── SudokuGenerator.cpp │ └── SudokuSolver.cpp ├── CMakeLists.txt # CMake build configuration └── .gitignore # Git ignore rules
