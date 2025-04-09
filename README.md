@@ -1,20 +1,24 @@
 # Sudoku Project
 
-This project is a C++ implementation of a Sudoku game, featuring functionalities for puzzle generation, solving, and validation.
+A modular C++ implementation of the classic **Sudoku** puzzle game. This project includes the ability to generate Sudoku puzzles, solve them using backtracking, and verify their validity.
 
-## Project Structure
+## 🧩 Features
 
-- `data/`: Contains data files related to the Sudoku puzzles.&#8203;:contentReference[oaicite:2]{index=2}
-- `include/`: :contentReference[oaicite:3]{index=3}&#8203;:contentReference[oaicite:4]{index=4}
-- `src/`: :contentReference[oaicite:5]{index=5}&#8203;:contentReference[oaicite:6]{index=6}
-- `.gitignore`: :contentReference[oaicite:7]{index=7}&#8203;:contentReference[oaicite:8]{index=8}
-- `CMakeLists.txt`: :contentReference[oaicite:9]{index=9}&#8203;:contentReference[oaicite:10]{index=10}
+### ✅ Sudoku Solver
+- Uses backtracking to find solutions for valid Sudoku puzzles.
+- Can solve puzzles of varying difficulty levels.
 
-## Getting Started
+### 🎲 Puzzle Generator
+- Randomly generates Sudoku puzzles with unique solutions.
+- Ensures logical consistency and puzzle validity.
 
-To build and run the project:
+### 🧪 Validator
+- Verifies if a given puzzle configuration is valid according to Sudoku rules:
+  - No repeating numbers in rows, columns, or 3×3 subgrids.
 
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/Mohamed-Ashraf0/soduku_project.git
+### 🔧 Modular Design
+- Separated into well-defined components:
+  - `SudokuBoard` – Handles board operations.
+  - `SudokuSolver` – Implements solving logic.
+  - `SudokuGenerator` – Generates puzzles with varying levels of difficulty.
+  - `SudokuGame` – Manages overall game logic.
